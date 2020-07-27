@@ -1,7 +1,7 @@
 apiVersion: radix.equinor.com/v1
 kind: RadixApplication
 metadata:
-  name: zephyre-aj-fork
+  name: zephyre
 spec:
   environments:
     - name: dev
@@ -9,7 +9,7 @@ spec:
         from: master
   components:
     - name: authentication
-      image: lightenup/auth-zephyre-api:{imageTagName}
+      image: equinor/auth-zephyre-api:{imageTagName}
       ports:
         - name: http
           port: 9000
@@ -30,7 +30,7 @@ spec:
     - name: resource
       ingressConfiguration:
         - websocketfriendly
-      image: lightenup/resource-zephyre-api:{imageTagName}
+      image: equinor/resource-zephyre-api:{imageTagName}
       ports:
         - name: http
           port: 9010
