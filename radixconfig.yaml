@@ -9,7 +9,7 @@ spec:
         from: master
   components:
     - name: authentication
-      image: equinor/auth-zephyre-api:{imageTagName}
+      image: johnnycache/auth-zephyre-api:{imageTagName}
       ports:
         - name: http
           port: 9000
@@ -30,7 +30,7 @@ spec:
     - name: resource
       ingressConfiguration:
         - websocketfriendly
-      image: equinor/resource-zephyre-api:{imageTagName}
+      image: johnnycache/resource-zephyre-api:{imageTagName}
       ports:
         - name: http
           port: 9010
