@@ -39,13 +39,13 @@ spec:
       environmentConfig:
         - environment: dev
           imageTagName: latest
-          replicas: 2
+          replicas: 3
           resources:
             requests:
-              memory: "8192Mi"
+              memory: "2048"
               cpu: "900m"
             limits:
-              memory: "8192Mi"
+              memory: "2048"
               cpu: "1500m"
           variables:
             TENANT: "3aa4a235-b6e2-48d5-9195-7fcf05b459b0"
