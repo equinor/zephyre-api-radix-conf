@@ -39,7 +39,7 @@ spec:
       environmentConfig:
         - environment: dev
           imageTagName: latest
-          replicas: 3
+          replicas: 2
           resources:
             requests:
               memory: "1024"
