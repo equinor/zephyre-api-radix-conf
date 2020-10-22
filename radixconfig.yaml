@@ -42,11 +42,11 @@ spec:
           replicas: 3
           resources:
             requests:
-              memory: "2048"
+              memory: "1024"
               cpu: "900m"
             limits:
               memory: "2048"
-              cpu: "1500m"
+              cpu: "1200m"
           variables:
             TENANT: "3aa4a235-b6e2-48d5-9195-7fcf05b459b0"
             AUTHORITY_HOST_URL: "https://login.microsoftonline.com"
