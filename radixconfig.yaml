@@ -42,7 +42,7 @@ spec:
           replicas: 2
           resources:
             requests:
-              memory: "4096Mi"
+              memory: "8192Mi"
               cpu: "900m"
             limits:
               memory: "8192Mi"
