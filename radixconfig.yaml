@@ -38,7 +38,7 @@ spec:
       public: true
       environmentConfig:
         - environment: dev
-          imageTagName: 0.1.29
+          imageTagName: latest
           replicas: 2
           resources:
             requests:
