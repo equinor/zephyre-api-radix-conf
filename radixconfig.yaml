@@ -58,7 +58,7 @@ spec:
             BAZE_URL: jdbc:hive2://northeurope.azuredatabricks.net:443/default;transportMode=http;ssl=true;httpPath=sql/protocolv1/o/4244953073543257/0120-144726-niche729;AuthMech=3;http.header.Connection=close
             VERTX_BLOCKED_THREAD_CHECK_MS: 3600000
             VERTXWEB_ENVIRONMENT: exposed-to-internet
-            JAVA_OPTS: -XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=75.0 -XX:+HeapDumpOnOutOfMemoryError
+            JAVA_OPTS: -XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=75.0 -Xmx3G
       secrets:
         - CLIENT_SECRET
         - APPLICATION_SECRET_KEY
