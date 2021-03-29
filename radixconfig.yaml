@@ -24,7 +24,7 @@ spec:
             TENANT: "3aa4a235-b6e2-48d5-9195-7fcf05b459b0"
             AUTHORITY_HOST_URL: "https://login.microsoftonline.com"
             CLIENT_ID: "7796f701-cf08-4729-b85f-a868ed5f483f"
-            REDIRECT_URL: >
+            REDIRECT_URL: >-
               "https://authentication-zephyre-dev.playground.radix.equinor.com/
               token"
             PORT: 9000
@@ -36,7 +36,7 @@ spec:
             TENANT: "3aa4a235-b6e2-48d5-9195-7fcf05b459b0"
             AUTHORITY_HOST_URL: "https://login.microsoftonline.com"
             CLIENT_ID: "4017c082-9c66-4c6c-9ffa-84fb0ef25111"
-            REDIRECT_URL: >
+            REDIRECT_URL: >-
               "https://authentication-zephyre-prod.radix.equinor.com/
               token"
             PORT: 9000
@@ -70,14 +70,14 @@ spec:
             RESOURCE: "7796f701-cf08-4729-b85f-a868ed5f483f"
             SERVER_PORT: 9010
             SERVER_HOST: 0.0.0.0
-            BAZE_URL: >
+            BAZE_URL: >-
               jdbc:hive2://northeurope.azuredatabricks.net:443/default;
               transportMode=http;ssl=true;
               httpPath=sql/protocolv1/o/4244953073543257/0120-144726-niche729;
               AuthMech=3;http.header.Connection=close
             VERTX_BLOCKED_THREAD_CHECK_MS: 3600000
             VERTXWEB_ENVIRONMENT: exposed-to-internet
-            JAVA_OPTS: >
+            JAVA_OPTS: >-
               -XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=75.0
               -Xmx5G
         - environment: prod
@@ -98,14 +98,14 @@ spec:
             RESOURCE: "4017c082-9c66-4c6c-9ffa-84fb0ef25111"
             SERVER_PORT: 9010
             SERVER_HOST: 0.0.0.0
-            BAZE_URL: >
+            BAZE_URL: >-
               jdbc:hive2://northeurope.azuredatabricks.net:443/default;
               transportMode=http;ssl=true;
               httpPath=sql/protocolv1/o/4244953073543257/0120-144726-niche729;
               AuthMech=3;http.header.Connection=close
             VERTX_BLOCKED_THREAD_CHECK_MS: 3600000
             VERTXWEB_ENVIRONMENT: exposed-to-internet
-            JAVA_OPTS: >
+            JAVA_OPTS: >-
               -XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=75.0
               -Xmx5G
       secrets:
