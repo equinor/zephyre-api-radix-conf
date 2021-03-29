@@ -54,13 +54,13 @@ spec:
       environmentConfig:
         - environment: dev
           imageTagName: latest
-          replicas: 2
+          replicas: 1
           resources:
             requests:
-              memory: "1024Mi"
+              memory: "4096Mi"
               cpu: "500m"
             limits:
-              memory: "2048Mi"
+              memory: "8096Mi"
               cpu: "900m"
           variables:
             TENANT: "3aa4a235-b6e2-48d5-9195-7fcf05b459b0"
@@ -79,7 +79,7 @@ spec:
             VERTXWEB_ENVIRONMENT: exposed-to-internet
             JAVA_OPTS: >
               -XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=75.0
-              -XX:+HeapDumpOnOutOfMemoryError
+              -Xmx5G
         - environment: prod
           imageTagName: latest
           replicas: 2
@@ -107,7 +107,7 @@ spec:
             VERTXWEB_ENVIRONMENT: exposed-to-internet
             JAVA_OPTS: >
               -XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=75.0
-              -XX:+HeapDumpOnOutOfMemoryError
+              -Xmx5G
       secrets:
         - CLIENT_SECRET
         - APPLICATION_SECRET_KEY
