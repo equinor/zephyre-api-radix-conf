@@ -24,7 +24,7 @@ spec:
             TENANT: "3aa4a235-b6e2-48d5-9195-7fcf05b459b0"
             AUTHORITY_HOST_URL: "https://login.microsoftonline.com"
             CLIENT_ID: "7796f701-cf08-4729-b85f-a868ed5f483f"
-            REDIRECT_URL: https://authentication-zephyre-dev.playground.radix.equinor.com/token
+            REDIRECT_URL: https://authentication-zephyre-dev.radix.equinor.com/token
             PORT: 9000
         - environment: prod
           imageTagName: latest
