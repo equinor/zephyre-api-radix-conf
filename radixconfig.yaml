@@ -16,7 +16,7 @@ spec:
       ports:
         - name: http
           port: 9000
-      public: true
+      publicPort: http
       environmentConfig:
         - environment: dev
           imageTagName: latest
@@ -48,7 +48,7 @@ spec:
       ports:
         - name: http
           port: 9010
-      public: true
+      publicPort: http
       environmentConfig:
         - environment: dev
           imageTagName: latest
