@@ -116,7 +116,7 @@ spec:
             RESOURCE: "4017c082-9c66-4c6c-9ffa-84fb0ef25111"
             SERVER_PORT: 9010
             SERVER_HOST: 0.0.0.0
-            BAZE_URL: jdbc:spark://northeurope.azuredatabricks.net:443/default;transportMode=http;ssl=1;httpPath=sql/protocolv1/o/4244953073543257/0120-144726-niche729;AuthMech=3;http.header.Connection=close
+            BAZE_URL: jdbc:hive2://northeurope.azuredatabricks.net:443/default;transportMode=http;ssl=true;httpPath=sql/protocolv1/o/4244953073543257/0120-144726-niche729;AuthMech=3;http.header.Connection=close
             JDBC_DRIVER: org.apache.hive.jdbc.HiveDriver
             VERTX_BLOCKED_THREAD_CHECK_MS: 3600000
             VERTXWEB_ENVIRONMENT: exposed-to-internet
