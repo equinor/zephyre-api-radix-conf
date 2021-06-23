@@ -29,7 +29,7 @@ spec:
             REDIRECT_URL: https://authentication-zephyre-dev.radix.equinor.com/token
             PORT: 9000
         - environment: prod
-          imageTagName: 0.1.113
+          imageTagName: 0.1.133
           replicas: 1
           variables:
             RESOURCE: "4017c082-9c66-4c6c-9ffa-84fb0ef25111"
