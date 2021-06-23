@@ -10,9 +10,6 @@ spec:
     - name: prod
       build:
         from: master
-    - name: prod-oldtables
-      build:
-        from: master
   components:
     - name: authentication
       image: johnnycache/auth-zephyre-api:{imageTagName}
