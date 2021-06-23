@@ -32,7 +32,7 @@ spec:
             REDIRECT_URL: https://authentication-zephyre-dev.radix.equinor.com/token
             PORT: 9000
         - environment: prod
-          imageTagName: latest
+          imageTagName: 0.1.113
           replicas: 1
           variables:
             RESOURCE: "4017c082-9c66-4c6c-9ffa-84fb0ef25111"
@@ -76,37 +76,14 @@ spec:
             VERTXWEB_ENVIRONMENT: exposed-to-internet
             JAVA_OPTS: -XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=75.0 -Xmx5G
         - environment: prod
-          imageTagName: 0.1.59
+          imageTagName: 0.1.113
           replicas: 2
           resources:
             requests:
-              memory: "1024Mi"
+              memory: "4096Mi"
               cpu: "500m"
             limits:
-              memory: "2048Mi"
-              cpu: "900m"
-          variables:
-            TENANT: "3aa4a235-b6e2-48d5-9195-7fcf05b459b0"
-            AUTHORITY_HOST_URL: "https://login.microsoftonline.com"
-            CLIENT_ID: "4017c082-9c66-4c6c-9ffa-84fb0ef25111"
-            TOKEN_ISSUER_HOST: "https://sts.windows.net/"
-            RESOURCE: "4017c082-9c66-4c6c-9ffa-84fb0ef25111"
-            SERVER_PORT: 9010
-            SERVER_HOST: 0.0.0.0
-            BAZE_URL: jdbc:hive2://northeurope.azuredatabricks.net:443/default;transportMode=http;ssl=true;httpPath=sql/protocolv1/o/4244953073543257/0120-144726-niche729;AuthMech=3;http.header.Connection=close
-            JDBC_DRIVER: org.apache.hive.jdbc.HiveDriver
-            VERTX_BLOCKED_THREAD_CHECK_MS: 3600000
-            VERTXWEB_ENVIRONMENT: exposed-to-internet
-            JAVA_OPTS: -XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=75.0 -Xmx5G
-        - environment: prod-oldtables
-          imageTagName: 0.1.54
-          replicas: 2
-          resources:
-            requests:
-              memory: "1024Mi"
-              cpu: "500m"
-            limits:
-              memory: "2048Mi"
+              memory: "8096Mi"
               cpu: "900m"
           variables:
             TENANT: "3aa4a235-b6e2-48d5-9195-7fcf05b459b0"
