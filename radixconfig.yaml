@@ -73,7 +73,7 @@ spec:
             VERTXWEB_ENVIRONMENT: exposed-to-internet
             JAVA_OPTS: -XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=75.0 -Xmx5G
         - environment: prod
-          imageTagName: 0.1.113
+          imageTagName: 0.1.133
           replicas: 2
           resources:
             requests:
