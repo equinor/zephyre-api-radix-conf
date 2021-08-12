@@ -19,6 +19,7 @@ spec:
       publicPort: http
       environmentConfig:
         - environment: dev
+          runAsNonRoot: true
           imageTagName: latest
           replicas: 1
           variables:
@@ -29,7 +30,8 @@ spec:
             REDIRECT_URL: https://authentication-zephyre-dev.radix.equinor.com/token
             PORT: 9000
         - environment: prod
-          imageTagName: 0.1.133
+          runAsNonRoot: true
+          imageTagName: 0.1.192
           replicas: 1
           variables:
             RESOURCE: "4017c082-9c66-4c6c-9ffa-84fb0ef25111"
@@ -51,6 +53,7 @@ spec:
       publicPort: http
       environmentConfig:
         - environment: dev
+          runAsNonRoot: true
           imageTagName: latest
           replicas: 1
           resources:
@@ -73,7 +76,8 @@ spec:
             VERTXWEB_ENVIRONMENT: exposed-to-internet
             JAVA_OPTS: -XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=75.0 -Xmx5G
         - environment: prod
-          imageTagName: 0.1.133
+          runAsNonRoot: true
+          imageTagName: 0.1.192
           replicas: 2
           resources:
             requests:
