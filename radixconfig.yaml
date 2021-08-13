@@ -31,7 +31,7 @@ spec:
             PORT: 9000
         - environment: prod
           runAsNonRoot: true
-          imageTagName: 0.1.192
+          imageTagName: 0.1.198
           replicas: 1
           variables:
             RESOURCE: "4017c082-9c66-4c6c-9ffa-84fb0ef25111"
@@ -77,7 +77,7 @@ spec:
             JAVA_OPTS: -XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=75.0 -Xmx5G
         - environment: prod
           runAsNonRoot: true
-          imageTagName: 0.1.192
+          imageTagName: 0.1.198
           replicas: 2
           resources:
             requests:
