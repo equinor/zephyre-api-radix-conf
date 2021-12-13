@@ -75,6 +75,7 @@ spec:
             VERTX_BLOCKED_THREAD_CHECK_MS: 3600000
             VERTXWEB_ENVIRONMENT: exposed-to-internet
             JAVA_OPTS: -XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=75.0 -Xmx5G
+            MAX_HEADER_SIZE: 9600
         - environment: prod
           runAsNonRoot: true
           imageTagName: 0.1.198
@@ -99,6 +100,7 @@ spec:
             VERTX_BLOCKED_THREAD_CHECK_MS: 3600000
             VERTXWEB_ENVIRONMENT: exposed-to-internet
             JAVA_OPTS: -XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=75.0 -Xmx5G
+            MAX_HEADER_SIZE: 9600
       secrets:
         - CLIENT_SECRET
         - APPLICATION_SECRET_KEY
