@@ -31,7 +31,7 @@ spec:
             PORT: 9000
         - environment: prod
           runAsNonRoot: true
-          imageTagName: 0.1.198
+          imageTagName: 0.1.403
           replicas: 1
           variables:
             RESOURCE: "4017c082-9c66-4c6c-9ffa-84fb0ef25111"
