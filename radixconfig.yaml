@@ -78,7 +78,7 @@ spec:
             MAX_HEADER_SIZE: 32768
         - environment: prod
           runAsNonRoot: true
-          imageTagName: 0.1.352
+          imageTagName: 0.1.403
           replicas: 2
           resources:
             requests:
